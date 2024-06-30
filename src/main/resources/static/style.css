@@ -1,0 +1,32 @@
+/* styles.css */
+body {
+    background-color: dimgray; /* Light grey background */
+}
+
+.container {
+    text-align: center; /* Center align content */
+    margin-top: 50px; /* Margin from top */
+}
+
+h2 {
+    color: #000000; /* Blue heading */
+    align-items: center; /* Center align heading */
+}
+
+form {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Align buttons vertically */
+    align-items: center; /* Center align buttons */
+}
+
+button {
+    margin-top: 10px; /* Margin between buttons */
+    width: 200px; /* Button width */
+    background-color: #007bff; /* Blue button */
+    color: #fff; /* White text */
+    border: #000000; /* Remove button border */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
