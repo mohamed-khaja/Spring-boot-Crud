@@ -1,4 +1,4 @@
-Student Grades CRUD Application
+### Student Grades CRUD Application
 
 ### Technologies Used:
 - Spring Boot
