@@ -11,12 +11,11 @@
 
 ### Setup Instructions:
 1. **Prerequisites:**
-   - Java Development Kit (JDK) version XX or higher
-   - Maven (if using for dependency management)
+   - Java Development Kit (JDK) version 17 or higher
+   - Maven
 
 2. **Installation:**
-   - Clone the repository: `git clone https://github.com/yourusername/your-repository.git`
-   - Navigate to the project directory: `cd your-repository`
+   - Clone the repository: `git clone https://github.com/mohamed-khaja/Spring-boot-Crud.git`
 
 3. **Running the Application:**
    - Build the project: `mvn clean package` (if using Maven)
