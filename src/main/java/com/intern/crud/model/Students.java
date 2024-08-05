@@ -2,12 +2,19 @@ package com.intern.crud.model;
 
 import org.springframework.stereotype.Component;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 @Component
+@Entity
 public class Students {
 
+    @Id
     private int rollNum;
+    @Column(name = "student_name")
     private String name;
-    private float grade;
+    private Float grade;
 
     public int getRollNum() {
         return rollNum;

@@ -14,6 +14,9 @@
         <form action="/view" method="get">
             <button type="submit" name="action" value="view">View all Students Grade</button>
         </form>
+        <form action="/viewbyid" method="get">
+            <button type="submit" name="action" value="view">View Student with Roll Number</button>
+        </form>
         <form action="/add" method="get">
             <button type="submit" name="action" value="add">Add record</button>
         </form>
