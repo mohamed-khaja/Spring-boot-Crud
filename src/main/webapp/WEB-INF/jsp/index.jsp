@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <h2>Students Grade</h2>
-        <form action="/view" method="get">
+        <form action="/allstudents" method="get">
             <button type="submit" name="action" value="view">View all Students Grade</button>
         </form>
         <form action="/viewbyid" method="get">

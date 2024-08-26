@@ -4,10 +4,15 @@
 - Spring Boot
 - JSP (JavaServer Pages)
 - Spring Data JPA
+- Oauth 2.1 (Keycloak)
 
 ### Project Description:
 • This CRUD (Create, Read, Update, Delete) web application allows users to manage student grades. 
 • It is built using Spring Boot for backend operations, JSP for the user interface, and Spring Data JPA for database connectivity and DAO (Data Access Object) operations.
+
+### Security:
+1. Implemented Oauth 2.1 usinf Keycloak 
+2. The URLs are role specific i.e., users only with admin role can view details of all students
 
 ### Setup Instructions:
 1. **Prerequisites:**
@@ -37,3 +42,8 @@
 3. Configure the spring.jpa.hibernate.ddl-auto:update // to enable hibernate to do ddl operation
 3. Tag the model class as @Entity // to mark the model class for mapping
 4. Tag any one variable as @Id // It denotes the Primary key for table, each @Entity must have one 
+
+### Security Changes:
+1. Added client registration properties and auth provider properties in application.properties
+2. SecurityConfig.java - handles the Auth, token, session configurations
+3. Added necessary dependecies

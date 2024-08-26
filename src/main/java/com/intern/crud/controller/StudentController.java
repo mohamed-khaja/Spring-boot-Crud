@@ -4,21 +4,20 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import com.intern.crud.database.StudentJPA;
 import com.intern.crud.model.Students;
 
-@Controller
+@RestController
 public class StudentController {
 
     @Autowired
     StudentJPA repo;
 
     // To execute index.jsp when application starts
-    @RequestMapping("/")
+    @RequestMapping("/home")
     public String home() {
         return "index";
     }
@@ -46,12 +45,12 @@ public class StudentController {
 
     // Calling the repo class directly for fetching all records as no processing
     // need by service class
-    @GetMapping("/view")
-    public String view(Model model) {
+    @GetMapping("/allstudents")
+    public List<Students> viewAllStudents(Model model) {
         List<Students> students = repo.findAll();
         System.out.println(students);
         model.addAttribute("students", students);
-        return "viewall";
+        return students;
     }
 
     // To fetch input from "newrecord.jsp" into the StudentModel object and sending
