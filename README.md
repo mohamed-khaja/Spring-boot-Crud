@@ -24,10 +24,10 @@
 
 3. **Running the Application:**
    - Build the project: `mvn clean package` (if using Maven)
-   - Run the application: `java -jar target/your-application.jar` (replace with your application's JAR file)
+   - Run the application: `java -jar target/your-application.jar` (replace with your application's JAR file)  or mvn spring-boot:run
 
 ### Usage:
-1. Access the application at `http://localhost:8090`.
+1. Access the application at `http://localhost:8099`.
 2. Use the interface to perform CRUD operations on student grades.
 
 ### Folder Structure:
